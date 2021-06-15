@@ -8,8 +8,9 @@ This tool allows you to track the native memory allocations in realtime for a Ja
 ## Packaging and running the application
 
 The application can be packaged using:
+
 ```shell script
-./mvnw package -Dquarkus.package.type=uber-jar
+./mvnw package
 ```
 
 Start the application you wish to trace with `-XX:NativeMemoryTracking=summary` enabled, e.g.
